@@ -1,0 +1,15 @@
+author: Denik
+name: SKOG
+main: com.denik.skog.SKOG
+version: 1.0
+commands:
+  skog:
+    description: Команды плагина
+permissions:
+  skog.*:
+    description: Все возможности плагина
+    children:
+        skog.reload: true
+  skog.reload:
+    description: Перезагружает плагин
+    default: false
