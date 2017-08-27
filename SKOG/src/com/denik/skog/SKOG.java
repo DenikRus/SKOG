@@ -43,12 +43,12 @@ public class SKOG extends JavaPlugin implements CommandExecutor {
 	 public boolean onCommand(final CommandSender sender, final Command cmd, final String label, final String[] args) {
 		 if (label.equalsIgnoreCase("skog")) {
 			 if (args.length == 0) {
-				 sender.sendMessage(ChatColor.BLACK + "[SKOG]"+ ChatColor.YELLOW + " /skog reload" + ChatColor.GREEN + "  Перезагружает конфиг");
+				 sender.sendMessage(ChatColor.BLACK + "[SKOG]"+ ChatColor.YELLOW + " /skog reload" + ChatColor.GREEN + "  ГЏГҐГ°ГҐГ§Г ГЈГ°ГіГ¦Г ГҐГІ ГЄГ®Г­ГґГЁГЈ");
 				 return true;
 			 }
 		 }
 		 if (!sender.hasPermission("skog.reload")) {
-			 sender.sendMessage(ChatColor.RED + "У вас нет прав");
+			 sender.sendMessage(ChatColor.RED + "Г“ ГўГ Г± Г­ГҐГІ ГЇГ°Г Гў");
 			 return true;
 		 }
 		 if (args[0].equalsIgnoreCase("reload")) {
@@ -56,7 +56,7 @@ public class SKOG extends JavaPlugin implements CommandExecutor {
 			 if (sender instanceof Player) {
 				 p = (Player) sender;				 				 
 		 this.reloadConfig();
-		 sender.sendMessage(ChatColor.GREEN + "[SKOG] Кофниг успешно перезагружен");
+		 sender.sendMessage(ChatColor.GREEN + "[SKOG] РљРѕРЅС„РёРі РїРµСЂРµР·Р°РіСЂСѓР¶РµРЅ");
 	     log.info("[SKOG] Config reloaded!");
 	     return true;
 			 }
